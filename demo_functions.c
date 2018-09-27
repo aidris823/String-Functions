@@ -21,7 +21,7 @@ pointed to by argument str.
   char* wrong_address = strchr(str,charmander);
 
   printf("Where is the first w in 'Zimbabwe'?: %s \n",address);
-  printf("What is the address of the first w in 'Zimbabwe'?: %c \n",*address);
+  printf("What is the address of the first w in 'Zimbabwe'?: %d \n",(int)&address);
   printf("There is no Q in 'Zimbabwe': %s \n \n",wrong_address);
   
   //Strstr
@@ -31,7 +31,7 @@ pointed to by argument str.
   char* snip_address = strstr(sentence,snippet);
   printf("Strstr demo: \n");
   printf("Location of 's gui' in %s: %s \n",sentence,snip_address);
-  printf("Address in memory: %c \n",*snip_address);
+  printf("Address in memory: %d \n",(int)&snip_address);
   
 
   return 0;
